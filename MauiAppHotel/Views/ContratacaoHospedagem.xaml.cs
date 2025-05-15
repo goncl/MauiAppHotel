@@ -1,9 +1,12 @@
-namespace MauiAppHotel.Views;
+using Microsoft.Maui.Controls;
 
-public partial class ContratacaoHospedagem : ContentPage
+namespace MauiAppHotel.Views
 {
-	public ContratacaoHospedagem()
-	{
-		InitializeComponent();
-	}
+    public partial class ContratacaoHospedagem : ContentPage
+    {
+        public ContratacaoHospedagem()
+        {
+            InitializeComponent();
+        }
+    }
 }
