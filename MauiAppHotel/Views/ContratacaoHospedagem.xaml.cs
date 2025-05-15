@@ -8,5 +8,10 @@ namespace MauiAppHotel.Views
         {
             InitializeComponent();
         }
+
+        private async void NavigateToSobre(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Sobre());
+        }
     }
 }

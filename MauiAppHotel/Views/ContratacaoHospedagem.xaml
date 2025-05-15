@@ -87,7 +87,7 @@
                         </VerticalStackLayout>
                     </Border>
 
-                    <Button Text="Avançar" Margin="50,20,50,0" />
+                    <Button Text="Avançar" x:Name="btnAvancar" Clicked="NavigateToSobre" Margin="50,20,50,0" />
 
                 </VerticalStackLayout>
             </Border>
