@@ -11,7 +11,12 @@
         <VerticalStackLayout Padding="10">
 
             <!-- Cabeçalho com borda azul mais grossa -->
-            <Border Stroke="DodgerBlue" StrokeThickness="6" StrokeShape="RoundRectangle 10" BackgroundColor="DodgerBlue">
+            <Border Stroke="DodgerBlue" 
+                    StrokeThickness="6" 
+                    StrokeShape="RoundRectangle 10" 
+                    BackgroundColor="DodgerBlue"
+                    Margin="0,5,0,0">
+                
                 <Label Text="Informações da Hospedagem"
                        FontSize="18"
                        FontAttributes="Bold"
@@ -20,7 +25,12 @@
             </Border>
 
             <!-- Borda Azul -->
-            <Border Stroke="DodgerBlue" StrokeThickness="5" StrokeShape="RoundRectangle 10" BackgroundColor="White" Padding="10">
+            <Border Stroke="DodgerBlue" 
+                    StrokeThickness="5" 
+                    StrokeShape="RoundRectangle 10" 
+                    BackgroundColor="White" 
+                    Padding="10">
+                
                 <VerticalStackLayout>
 
                     <!-- Imagem do hotel -->
@@ -37,30 +47,77 @@
                         HorizontalOptions="Center" />
 
                     <!-- Cabeçalho da Borda Amarela -->
-                    <Border Stroke="Goldenrod" StrokeThickness="6" StrokeShape="RoundRectangle 10" BackgroundColor="Goldenrod">
+                    <Border Stroke="Goldenrod" 
+                            StrokeThickness="6" 
+                            StrokeShape="RoundRectangle 10" 
+                            BackgroundColor="Goldenrod">
+                        
                         <Label Text="Número de Hóspedes"
                            FontSize="18"
                            FontAttributes="Bold"
                            TextColor="White"
                            HorizontalOptions="Center"/>
+                        
                     </Border>
 
                     <!-- Borda Amarela -->
-                    <Border Stroke="Gold" StrokeThickness="5" Padding="10" StrokeShape="RoundRectangle 15" BackgroundColor="White">
+                    <Border Stroke="Gold" 
+                            StrokeThickness="5" 
+                            Padding="10" 
+                            StrokeShape="RoundRectangle 15" 
+                            BackgroundColor="White">
+                        
                         <Grid RowDefinitions="Auto, Auto"
                               ColumnDefinitions="*, *, 2*">
-                            <Label Grid.Row="0" Grid.Column="0" Text="Adultos:" FontFamily="Roboto"/>
-                            <Label Grid.Row="0" Grid.Column="1" TextColor="{StaticResource Primary}" Text="{Binding Value}" BindingContext="{x:Reference stp_adultos}" />
-                            <Stepper Grid.Row="0" Grid.Column="2" x:Name="stp_adultos" Minimum="0" Maximum="10" Increment="1" />
 
-                            <Label Grid.Row="1" Grid.Column="0" Text="Crianças:" />
-                            <Label Grid.Row="1" Grid.Column="1" TextColor="{StaticResource Primary}" Text="{Binding Value}" BindingContext="{x:Reference stp_criancas}" />
-                            <Stepper Grid.Row="1" Grid.Column="2" x:Name="stp_criancas" Minimum="0" Maximum="10" Increment="1" />
+                            <Label Grid.Row="0" 
+                                   Grid.Column="0" 
+                                   Text="Adultos:"
+                                   FontSize="16"
+                                   TextColor="{StaticResource Primary}"
+                                   Margin="0,0,0,15" />        
+
+                            <Label Grid.Row="0" 
+                                   Grid.Column="1" 
+                                   TextColor="{StaticResource Primary}" 
+                                   Text="{Binding Value}" 
+                                   BindingContext="{x:Reference stp_adultos}" />
+                            
+                            <Stepper Grid.Row="0" 
+                                     Grid.Column="2" 
+                                     x:Name="stp_adultos" 
+                                     Minimum="0" 
+                                     Maximum="10" 
+                                     Increment="1" />
+
+                            <Label Grid.Row="1" 
+                                   Grid.Column="0" 
+                                   Text="Crianças:" 
+                                   FontSize="16"
+                                   TextColor="{StaticResource Primary}"
+                                   Margin="0,0,0,15" />
+
+                            <Label Grid.Row="1" 
+                                   Grid.Column="1" 
+                                   TextColor="{StaticResource Primary}" 
+                                   Text="{Binding Value}" 
+                                   BindingContext="{x:Reference stp_criancas}" />
+                            
+                            <Stepper Grid.Row="1" 
+                                     Grid.Column="2" 
+                                     x:Name="stp_criancas" 
+                                     Minimum="0" Maximum="10" 
+                                     Increment="1" />
+                            
                         </Grid>
                     </Border>
 
                     <!-- Cabeçalho da Borda Rosa -->
-                    <Border Stroke="HotPink" StrokeThickness="6" StrokeShape="RoundRectangle 10" BackgroundColor="HotPink">
+                    <Border Stroke="HotPink" 
+                            StrokeThickness="6" 
+                            StrokeShape="RoundRectangle 10" 
+                            BackgroundColor="HotPink">
+                        
                         <Label Text="Detalhes da Estadia"
                            FontSize="18"
                            FontAttributes="Bold"
@@ -69,26 +126,62 @@
                     </Border>
 
                             <!-- Borda Rosa -->
-                    <Border Stroke="HotPink" StrokeThickness="5" Padding="10" StrokeShape="RoundRectangle 10" BackgroundColor="White">
+                    <Border Stroke="HotPink" 
+                            StrokeThickness="5" 
+                            Padding="10" 
+                            StrokeShape="RoundRectangle 10" 
+                            BackgroundColor="White">
+                        
                         <VerticalStackLayout>
-                            <Label Text="Escolha sua Suite" />
-                            <Picker x:Name="pck_quarto" Title="Selecione sua Acomodação" />
+                            <Label Text="Escolha sua Suite" 
+                                   FontSize="16"
+                                   TextColor="{StaticResource Primary}"
+                                   Margin="0,0,0,15" />        
+                            <Picker x:Name="pck_quarto" 
+                                    TextColor="{StaticResource Primary}"
+                                    Title="Selecione sua Acomodação" 
+                                    FontSize="16" />
 
-                            <Label Text="Período de Estadia" />
+                            <Label Text="Período de Estadia" 
+                                   FontSize="16"
+                                   TextColor="{StaticResource Primary}"
+                                   Margin="0,0,0,15" />
+                            
                             <HorizontalStackLayout>
-                                <Label Text="Check-in:" />
-                                <DatePicker x:Name="dtpck_checkin" Format="dd/MM/yyyy" />
+                                <Label Text="Check-in:" 
+                                       FontSize="16"
+                                       TextColor="{StaticResource Primary}"
+                                       Margin="0,0,0,15" />
+                                
+                                <DatePicker x:Name="dtpck_checkin" 
+                                            Format="dd/MM/yyyy" 
+                                            FontSize="16"
+                                            TextColor="{StaticResource Primary}"/>
                             </HorizontalStackLayout>
 
                             <HorizontalStackLayout>
-                                <Label Text="Check-out:" />
-                                <DatePicker x:Name="dtpck_checkout" Format="dd/MM/yyyy" />
+                                <Label Text="Check-out:" 
+                                       FontSize="16"
+                                       TextColor="{StaticResource Primary}"
+                                       Margin="0,0,0,15" />
+                                <DatePicker x:Name="dtpck_checkout" 
+                                            Format="dd/MM/yyyy"
+                                            FontSize="16"
+                                            TextColor="{StaticResource Primary}" />
                             </HorizontalStackLayout>
                         </VerticalStackLayout>
                     </Border>
 
-                    <Button Text="Avançar" x:Name="btnAvancar" Clicked="NavigateToSobre" Margin="50,20,50,0" />
+                    <HorizontalStackLayout>         
+                        <Button Text="Avançar" 
+                                x:Name="btnAvancar" 
+                                Margin="50,20,50,0" />
 
+                        <Button Text="Sobre" 
+                                x:Name="btnSobre" 
+                                Clicked="NavigateToSobre" 
+                                Margin="50,20,50,0" />
+                    </HorizontalStackLayout>
                 </VerticalStackLayout>
             </Border>
 

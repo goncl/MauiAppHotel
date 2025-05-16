@@ -4,99 +4,194 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="MauiAppHotel.Views.Sobre"
     Title="Sobre"
+    NavigationPage.HasNavigationBar="False"
     BackgroundColor="White">
 
     <ScrollView>
-        <VerticalStackLayout Padding="20">
-            <Label
-                Text="Sobre Nós"
-                FontSize="30"
-                FontAttributes="Bold"
-                TextColor="DodgerBlue"
-                HorizontalOptions="Center"
-                Margin="0,0,0,20" />
+        <Border Stroke="DodgerBlue" 
+            StrokeThickness="3" 
+            StrokeShape="RoundRectangle 10" 
+            BackgroundColor="White" 
+            Padding="5" 
+            Margin="0,15,0,0">
+            
+            <VerticalStackLayout Padding="10">
 
-            <Image
-                Source="hotel.jpg"  Aspect="AspectFill"
-                HeightRequest="250"
-                HorizontalOptions="Center"
-                Margin="0,0,0,20" />
+                <Border Stroke="DodgerBlue" 
+                    StrokeThickness="6" 
+                    StrokeShape="RoundRectangle 10" 
+                    BackgroundColor="DodgerBlue">
 
-            <Border Stroke="DodgerBlue" StrokeThickness="5" StrokeShape="RoundRectangle 10" BackgroundColor="White" Padding="10">
-                <VerticalStackLayout>
                     <Label
-                        Text="Quem Somos"
-                        FontSize="24"
+                        Text="Sobre Nós"
+                        FontSize="30"
                         FontAttributes="Bold"
-                        TextColor="Goldenrod"
-                        Margin="0,0,0,10" />
-                    <Label
-                        Text="Somos uma empresa dedicada a proporcionar experiências de hospedagem excepcionais.  Nossa missão é oferecer conforto, qualidade e um serviço atencioso aos nossos hóspedes."
-                        FontSize="16"
-                        TextColor="{StaticResource Primary}"
-                        Margin="0,0,0,15" />
-                </VerticalStackLayout>
-            </Border>
+                        TextColor="white"
+                        HorizontalOptions="Center" />
+                </Border>
 
-            <Border Stroke="HotPink" StrokeThickness="5" StrokeShape="RoundRectangle 10" BackgroundColor="White" Padding="10" Margin="0,10,0,0">
-                <VerticalStackLayout>
+                <Border Stroke="DodgerBlue" 
+                    StrokeThickness="3" 
+                    StrokeShape="RoundRectangle 10" 
+                    BackgroundColor="White" 
+                    Padding="5" 
+                    Margin="0,0,0,5">
+
+                    <Image
+                        Source="hotel3.jpg"  
+                        Aspect="AspectFill"
+                        HeightRequest="250"
+                        HorizontalOptions="Center" />
+
+                </Border>
+
+                <Border Stroke="Goldenrod" 
+                    StrokeThickness="3" 
+                    StrokeShape="RoundRectangle 10" 
+                    BackgroundColor="Goldenrod">
+
+                    <Label
+                    Text="Quem Somos"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    TextColor="white" 
+                    HorizontalOptions="Center" />
+
+                </Border>
+
+                <Border Stroke="Goldenrod" 
+                     StrokeThickness="3" 
+                     StrokeShape="RoundRectangle 10" 
+                     BackgroundColor="White" 
+                     Padding="5"
+                     Margin="0,0,0,5">
+
+                    <VerticalStackLayout>
+                        <Label
+                            Text="Somos uma empresa dedicada a proporcionar experiências 
+                            de hospedagem excepcionais.  
+                            Nossa missão é oferecer conforto, 
+                            qualidade e um serviço atencioso aos nossos hóspedes."
+                            FontSize="16"
+                            TextColor="{StaticResource Primary}"
+                            Margin="0,0,0,5" />
+
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Stroke="HotPink" 
+                    StrokeThickness="3" 
+                    StrokeShape="RoundRectangle 10" 
+                    BackgroundColor="HotPink">
+                    
                     <Label
                         Text="Nossos Serviços"
                         FontSize="24"
                         FontAttributes="Bold"
-                        TextColor="HotPink"
-                        Margin="0,0,0,10" />
-                    <Label
-                        Text="Oferecemos uma variedade de serviços para tornar sua estadia inesquecível, incluindo acomodações confortáveis, opções de lazer, restaurante e muito mais."
-                        FontSize="16"
-                         TextColor="{StaticResource Primary}"
-                        Margin="0,0,0,15" />
-                    <Label
-                        Text="Recursos Adicionais:"
-                        FontSize="16"
-                        FontAttributes="Bold"
-                         TextColor="{StaticResource Primary}"
-                        Margin="0,0,0,5" />
-                    <Label
-                        Text="-  Piscina"
-                        FontSize="16"
-                         TextColor="{StaticResource Primary}"/>
-                    <Label
-                        Text="-  Restaurante"
-                        FontSize="16"
-                         TextColor="{StaticResource Primary}"/>
-                    <Label
-                        Text="-  Wi-Fi Gratuito"
-                        FontSize="16"
-                         TextColor="{StaticResource Primary}"/>
-                    <Label
-                        Text="-  Estacionamento"
-                        FontSize="16"
-                         TextColor="{StaticResource Primary}"/>
-                </VerticalStackLayout>
-            </Border>
-            <Border Stroke="DodgerBlue" StrokeThickness="5" StrokeShape="RoundRectangle 10" BackgroundColor="White" Padding="10" Margin="0,10,0,0">
-                <VerticalStackLayout>
+                        TextColor="white"
+                        HorizontalOptions="Center" />
+
+                </Border>
+
+                <Border Stroke="HotPink" 
+                        StrokeThickness="3" 
+                        StrokeShape="RoundRectangle 10" 
+                        BackgroundColor="White" 
+                        Padding="5" 
+                        Margin="0,0,0,5">
+
+                    <VerticalStackLayout>
+
+                        <Label
+                            Text="Oferecemos uma variedade de serviços para tornar 
+                            sua estadia inesquecível, 
+                            incluindo acomodações confortáveis, 
+                            opções de lazer, restaurante e muito mais."
+                            FontSize="16"
+                            TextColor="{StaticResource Primary}"
+                            Margin="0,0,0,5" />
+                
+                        <Label
+                            Text="Recursos Adicionais:"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            TextColor="{StaticResource Primary}"
+                            Margin="0,0,0,5" />
+                
+                        <Label
+                            Text="-  Piscina"
+                            FontSize="16"
+                            TextColor="{StaticResource Primary}"/>
+                
+                        <Label
+                            Text="-  Restaurante"
+                            FontSize="16"
+                            TextColor="{StaticResource Primary}"/>
+                
+                        <Label
+                            Text="-  Wi-Fi Gratuito"
+                            FontSize="16"
+                            TextColor="{StaticResource Primary}"/>
+                
+                        <Label
+                            Text="-  Estacionamento"
+                            FontSize="16"
+                            TextColor="{StaticResource Primary}"/>
+                
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Stroke="DodgerBlue" 
+                    StrokeThickness="3" 
+                    StrokeShape="RoundRectangle 10" 
+                    BackgroundColor="DodgerBlue">
+
                     <Label
                         Text="Contato"
                         FontSize="24"
                         FontAttributes="Bold"
-                        TextColor="Goldenrod"
-                        Margin="0,0,0,10" />
-                    <Label
-                        Text="Endereço: Rua Exemplo, 123"
-                        FontSize="16"
-                         TextColor="{StaticResource Primary}"/>
-                    <Label
-                        Text="Telefone: (12) 3456-7890"
-                        FontSize="16"
-                         TextColor="{StaticResource Primary}"/>
-                    <Label
-                        Text="Email: contato@hotelexemplo.com.br"
-                        FontSize="16"
-                         TextColor="{StaticResource Primary}"/>
-                </VerticalStackLayout>
-            </Border>
-        </VerticalStackLayout>
+                        TextColor="White"
+                        HorizontalOptions="Center" />
+
+                </Border>
+                
+                    <Border Stroke="DodgerBlue" 
+                        StrokeThickness="3" 
+                        StrokeShape="RoundRectangle 10" 
+                        BackgroundColor="White" 
+                        Padding="5" 
+                        Margin="0,0,0,5">
+
+                    <VerticalStackLayout>
+
+                        <Label
+                            Text="Endereço: Rua Exemplo, 123."
+                            FontSize="16"
+                            TextColor="{StaticResource Primary}"/>
+
+                        <Label
+                            Text="Telefone: (12) 3456-7890"
+                            FontSize="16"
+                            TextColor="{StaticResource Primary}"/>
+
+                        <Label
+                            Text="Email: contato@hotelexemplo.com.br."
+                            FontSize="16"
+                            TextColor="{StaticResource Primary}"/>
+
+                        <Label
+                            Text="Desenvolvido por Celso Gonçalves."
+                            FontSize="16"
+                            TextColor="{StaticResource Primary}"/>
+
+                        <Label
+                            Text="Ano de Desnvolvimento 2025. "
+                            FontSize="16"
+                            TextColor="{StaticResource Primary}"/>
+
+                    </VerticalStackLayout>
+                </Border>
+            </VerticalStackLayout>
+        </Border>
     </ScrollView>
 </ContentPage>
